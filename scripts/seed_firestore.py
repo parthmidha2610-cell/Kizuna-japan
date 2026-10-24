@@ -2,56 +2,340 @@ CATALOG_DATA = [
     # ==========================================
     # FAMOUS TIER (India Trends Index > 0.70)
     # ==========================================
-    {
-        "id": "deathnote", "name": "Death Note", "india_fame_tier": "famous",
-        "vector": {"genre_one_hot": {"supernatural": 1, "suspense": 1, "psychological": 1}, "tag_weights": {"anti_hero": 0.95, "mind_games": 0.95, "police": 0.8}, "demographic_tag": "shonen"},
-        "mal_score": 8.62, "anilist_popularity": 1, "trailer_youtube_id": "NlJZ-Ygsh_c", "trends_india_relative_index": 1.00
+    
+{
+  "id": "deathnote",
+  "name": "Death Note",
+  "india_fame_tier": "famous",
+  "india_fame_tier_source": "manual_assumption",
+  "vector": {
+    "genre_one_hot": {
+      "supernatural": 1,
+      "suspense": 1,
+      "psychological": 1,
+      "mystery": 1
     },
-    {
-        "id": "demonslayer", "name": "Demon Slayer", "india_fame_tier": "famous",
-        "vector": {"genre_one_hot": {"action": 1, "fantasy": 1}, "tag_weights": {"swordsplay": 0.95, "demons": 0.9, "revenge": 0.8}, "demographic_tag": "shonen"},
-        "mal_score": 8.49, "anilist_popularity": 2, "trailer_youtube_id": "VQGCJiUNqbi", "trends_india_relative_index": 0.95
+    "tag_weights": {
+      "anti_hero": 0.94,
+      "mind_games": 0.95,
+      "police": 0.87
     },
-    {
-        "id": "attackontitan", "name": "Attack on Titan", "india_fame_tier": "famous",
-        "vector": {"genre_one_hot": {"action": 1, "drama": 1, "suspense": 1}, "tag_weights": {"military": 0.9, "survival": 0.95, "gore": 0.85}, "demographic_tag": "shonen"},
-        "mal_score": 8.54, "anilist_popularity": 3, "trailer_youtube_id": "MGRm4IzK1SQ", "trends_india_relative_index": 0.98
+    "demographic_tag": "shonen"
+  },
+  "mal_score": 8.62,
+  "anilist_popularity": 960805,
+  "anilist_popularity_rank": 4,
+  "trailer_youtube_id": None,
+  "trends_india_relative_index": None
+}
+,
+   
+{
+  "id": "demonslayer",
+  "name": "Demon Slayer",
+  "india_fame_tier": "famous",
+  "india_fame_tier_source": "manual_assumption",
+  "vector": {
+    "genre_one_hot": {
+      "action": 1,
+      "adventure": 1,
+      "fantasy": 1,
+      "supernatural": 1,
+      "drama": 1
     },
-    {
-        "id": "naruto", "name": "Naruto", "india_fame_tier": "famous",
-        "vector": {"genre_one_hot": {"action": 1, "adventure": 1, "fantasy": 1}, "tag_weights": {"ninja": 0.99, "training": 0.85, "rivalry": 0.9}, "demographic_tag": "shonen"},
-        "mal_score": 7.99, "anilist_popularity": 8, "trailer_youtube_id": "j2hiC9WdihM", "trends_india_relative_index": 0.99
+    "tag_weights": {
+      "demons": 0.96,
+      "swordplay": 0.88,
+      "male_protagonist": 0.82,
+      "tragedy": 0.78,
+      "revenge": 0.74,
+      "mythology": 0.65
     },
-    {
-        "id": "onepiece", "name": "One Piece", "india_fame_tier": "famous",
-        "vector": {"genre_one_hot": {"action": 1, "adventure": 1, "fantasy": 1}, "tag_weights": {"pirates": 0.99, "world_building": 0.95, "found_family": 0.9}, "demographic_tag": "shonen"},
-        "mal_score": 8.71, "anilist_popularity": 12, "trailer_youtube_id": "MCb13lbVGE0", "trends_india_relative_index": 0.97
+    "demographic_tag": "shonen"
+  },
+  "mal_score": None,
+  "anilist_popularity": 1007020,
+  "anilist_popularity_rank": 2,
+  "anilist_average_score": 82,
+  "trailer_youtube_id": None,
+  "trends_india_relative_index": None,
+  "release_year": 2019,
+  "episodes": 26,
+  "studio": "ufotable",
+  "anilist_id": 101922
+}
+,
+    
+{
+  "id": "attackontitan",
+  "name": "Attack on Titan",
+  "india_fame_tier": "famous",
+  "india_fame_tier_source": "manual_assumption",
+  "vector": {
+    "genre_one_hot": {
+      "action": 1,
+      "drama": 1,
+      "fantasy": 1,
+      "mystery": 1,
+      "suspense": 1
     },
-    {
-        "id": "jujutsukaisen", "name": "Jujutsu Kaisen", "india_fame_tier": "famous",
-        "vector": {"genre_one_hot": {"action": 1, "fantasy": 1, "supernatural": 1}, "tag_weights": {"magic": 0.85, "school": 0.7, "dark_fantasy": 0.9}, "demographic_tag": "shonen"},
-        "mal_score": 8.61, "anilist_popularity": 5, "trailer_youtube_id": "pkWEjh2G-uo", "trends_india_relative_index": 0.96
+    "tag_weights": {
+      "kaiju": 0.93,
+      "revenge": 0.93,
+      "military": 0.88,
+      "post_apocalyptic": 0.84,
+      "survival": 0.84,
+      "dystopian": 0.77,
+      "swordplay": 0.74
     },
-    {
-        "id": "dragonballz", "name": "Dragon Ball Z", "india_fame_tier": "famous",
-        "vector": {"genre_one_hot": {"action": 1, "adventure": 1, "sci-fi": 1}, "tag_weights": {"martial_arts": 0.95, "aliens": 0.8, "power_scaling": 0.99}, "demographic_tag": "shonen"},
-        "mal_score": 8.16, "anilist_popularity": 30, "trailer_youtube_id": "O3h2N7rBsz8", "trends_india_relative_index": 0.99
+    "demographic_tag": "shonen"
+  },
+  "mal_score": 8.58,
+  "anilist_popularity": 1069717,
+  "anilist_popularity_rank": 1,
+  "anilist_average_score": 85,
+  "trailer_youtube_id":None,
+  "trends_india_relative_index": None,
+  "release_year": 2013,
+  "episodes": 25,
+  "studio": "WIT Studio",
+  "anilist_id": 16498
+}
+,
+   
+{
+  "id": "naruto",
+  "name": "Naruto",
+  "india_fame_tier": "famous",
+  "india_fame_tier_source": "manual_assumption",
+  "vector": {
+    "genre_one_hot": {
+      "action": 1,
+      "adventure": 1,
+      "comedy": 1,
+      "drama": 1,
+      "fantasy": 1,
+      "supernatural": 1
     },
-    {
-        "id": "myheroacademia", "name": "My Hero Academia", "india_fame_tier": "famous",
-        "vector": {"genre_one_hot": {"action": 1, "sci-fi": 1}, "tag_weights": {"superheroes": 0.99, "school": 0.85, "underdog": 0.9}, "demographic_tag": "shonen"},
-        "mal_score": 7.87, "anilist_popularity": 4, "trailer_youtube_id": "-77UEct0cZM", "trends_india_relative_index": 0.85
+    "tag_weights": {
+      "ninja": 0.97,
+      "coming_of_age": 0.90,
+      "male_protagonist": 0.88,
+      "orphan": 0.86,
+      "super_power": 0.85,
+      "martial_arts": 0.81,
+      "found_family": 0.80
     },
-    {
-        "id": "tokyoghoul", "name": "Tokyo Ghoul", "india_fame_tier": "famous",
-        "vector": {"genre_one_hot": {"action": 1, "fantasy": 1, "horror": 1}, "tag_weights": {"gore": 0.9, "psychological": 0.85, "monsters": 0.9}, "demographic_tag": "seinen"},
-        "mal_score": 7.79, "anilist_popularity": 7, "trailer_youtube_id": "vGuQeQ5VgZA", "trends_india_relative_index": 0.88
+    "demographic_tag": "shonen"
+  },
+  "mal_score": None,
+  "anilist_popularity": 735317,
+  "anilist_average_score": 80,
+  "trailer_youtube_id": None,
+  "trends_india_relative_index": None,
+  "release_year": 2002,
+  "episodes": 220,
+  "studio": "Studio Pierrot",
+  "anilist_id": 20
+}
+,
+    
+{
+  "id": "onepiece",
+  "name": "One Piece",
+  "india_fame_tier": "famous",
+  "india_fame_tier_source": "manual_assumption",
+  "vector": {
+    "genre_one_hot": {
+      "action": 1,
+      "adventure": 1,
+      "comedy": 1,
+      "drama": 1,
+      "fantasy": 1
     },
-    {
-        "id": "hunterxhunter", "name": "Hunter x Hunter", "india_fame_tier": "famous",
-        "vector": {"genre_one_hot": {"action": 1, "adventure": 1, "fantasy": 1}, "tag_weights": {"strategy": 0.9, "world_building": 0.85, "dark_fantasy": 0.8}, "demographic_tag": "shonen"},
-        "mal_score": 9.04, "anilist_popularity": 6, "trailer_youtube_id": "d6kBeJjTGnY", "trends_india_relative_index": 0.82
+    "tag_weights": {
+      "pirates": 0.98,
+      "travel": 0.94,
+      "ensemble_cast": 0.93,
+      "super_power": 0.90,
+      "found_family": 0.88,
+      "male_protagonist": 0.83,
+      "conspiracy": 0.81,
+      "ships": 0.81,
+      "prophecy": 0.80
     },
+    "demographic_tag": "shonen"
+  },
+  "mal_score": None,
+  "anilist_popularity": 753033,
+  "anilist_average_score": 87,
+  "trailer_youtube_id": None,
+  "trends_india_relative_index": None,
+  "release_year": 1999,
+  "episodes": None,
+  "studio": "Toei Animation",
+  "anilist_id": 21
+}
+,
+    
+{
+  "id": "jujutsukaisen",
+  "name": "Jujutsu Kaisen",
+  "india_fame_tier": "famous",
+  "india_fame_tier_source": "manual_assumption",
+  "vector": {
+    "genre_one_hot": {
+      "action": 1,
+      "fantasy": 1,
+      "supernatural": 1,
+      "drama": 1,
+      "horror": 1
+    },
+    "tag_weights": {
+      "curses": 0.98,
+      "super_power": 0.95,
+      "martial_arts": 0.88,
+      "demons": 0.82,
+      "school": 0.85,
+      "male_protagonist": 0.90,
+      "urban_fantasy": 0.92
+    },
+    "demographic_tag": "shonen"
+  },
+  "mal_score": None,
+  "anilist_popularity": None,
+  "anilist_average_score": None,
+  "trailer_youtube_id": None,
+  "trends_india_relative_index": None,
+  "release_year": 2020,
+  "episodes": 24,
+  "studio": "MAPPA",
+  "anilist_id": 113415
+}
+,
+    
+{
+  "id": "dragonballz",
+  "name": "Dragon Ball Z",
+  "india_fame_tier": "famous",
+  "india_fame_tier_source": "manual_assumption",
+  "vector": {
+    "genre_one_hot": {
+      "action": 1,
+      "adventure": 1,
+      "fantasy": 1,
+      "comedy": 1,
+      "science_fiction": 1
+    },
+    "tag_weights": {
+      "martial_arts": 0.99,
+      "super_power": 0.98,
+      "aliens": 0.95,
+      "tournament": 0.90,
+      "male_protagonist": 0.92,
+      "training": 0.90,
+      "friendship": 0.88
+    },
+    "demographic_tag": "shonen"
+  },
+  "mal_score": None,
+  "anilist_popularity": None,
+  "anilist_average_score": None,
+  "trailer_youtube_id": None,
+  "trends_india_relative_index": None,
+  "release_year": 1989,
+  "episodes": 291,
+  "studio": "Toei Animation",
+  "anilist_id": 813
+}
+,
+    
+{
+  "id": "myheroacademia",
+  "name": "My Hero Academia",
+  "india_fame_tier": "famous",
+  "india_fame_tier_source": "manual_assumption",
+  "vector": {
+    "genre_one_hot": {
+      "action": 1,
+      "adventure": 1,
+      "comedy": 1,
+      "drama": 1,
+      "fantasy": 1
+    },
+    "tag_weights": {
+      "superhero": 0.99,
+      "super_power": 0.98,
+      "school": 0.95,
+      "coming_of_age": 0.90,
+      "male_protagonist": 0.90,
+      "ensemble_cast": 0.87,
+      "rivalry": 0.88
+    },
+    "demographic_tag": "shonen"
+  },
+  "mal_score": None,
+  "anilist_popularity": None,
+  "anilist_average_score": None,
+  "trailer_youtube_id": None,
+  "trends_india_relative_index": None,
+  "release_year": 2016,
+  "episodes": 13,
+  "studio": "Bones",
+  "anilist_id": 21459
+}
+,
+ tokyoghoul = {
+    "id": "tokyoghoul",
+    "name": "Tokyo Ghoul",
+    "india_fame_tier": None,
+    "vector": {
+        "genre_one_hot": {
+            "action": 1,
+            "drama": 1,
+            "horror": 1,
+            "supernatural": 1
+        },
+        "tag_weights": {
+            "dark_fantasy": 0.95,
+            "gore": 0.90,
+            "tragedy": 0.90,
+            "psychological": 0.85,
+            "monsters": 0.85
+        },
+        "demographic_tag": "seinen"
+    },
+    "mal_score": None,
+    "anilist_popularity": None,
+    "trailer_youtube_id": None,
+    "trends_india_relative_index": None
+}
+
+hunterxhunter = {
+    "id": "hunterxhunter",
+    "name": "Hunter x Hunter",
+    "india_fame_tier": None,
+    "vector": {
+        "genre_one_hot": {
+            "action": 1,
+            "adventure": 1,
+            "fantasy": 1
+        },
+        "tag_weights": {
+            "coming_of_age": 0.90,
+            "friendship": 0.90,
+            "super_power": 0.95,
+            "tournament": 0.85,
+            "strategy": 0.90,
+            "travel": 0.85
+        },
+        "demographic_tag": "shonen"
+    },
+    "mal_score": None,
+    "anilist_popularity": None,
+    "trailer_youtube_id": None,
+    "trends_india_relative_index": None
+},
     {
         "id": "onepunchman", "name": "One Punch Man", "india_fame_tier": "famous",
         "vector": {"genre_one_hot": {"action": 1, "comedy": 1, "sci-fi": 1}, "tag_weights": {"superheroes": 0.95, "parody": 0.9, "overpowered": 0.99}, "demographic_tag": "seinen"},
